@@ -4,22 +4,53 @@ document.addEventListener("DOMContentLoaded", function () {
  
 
 
-    let champSaisie = document.getElementById("root")
-    let input = document.createElement('root')
-    champSaisie.appendChild(root)
+    let root = document.getElementById("root")
     let select = document.createElement('select')
-    champSaisie.appendChild(select)
+    select.id="select1"
+    select.value="select"
+    let input = document.createElement('input')
+    input.id="imput_origin"
+    select.innerHTML="choisir sa monnaie"
+    input.appendChild(select)
     let option1 = document.createElement('option')
+    option1.id="euro"
+    option1.value ="euro"
     option1.innerText = "euro €"
-    champSaisie.appendChild(option1)
+    input.appendChild(option1)
     let option2 = document.createElement('option')
+    option2.id="dolar"
+    option2.value ="dolar"
     option2.innerText= "dolar $"
-    champSaisie.appendChild(option2)
+    input.appendChild(option2)
     let option3 = document.createElement('option')
+    option3.id="yen"
+    option3.value ="yen"
     option3.innerText= "yen"
-    input.id = "champSaisie"
+    input.appendChild(option3)
+    root.appendChild(input)
     input.placeholder = "Saisir valeur a convertir"
-
+    let resultat= document.getElementById('resultat')
+    resultat.id = "resultat"
+    select.value="select"
+    select.innerHTML="choisir sa monnaie"
+    input.appendChild(select)
+    let input2 = document.createElement('deviseResultat')
+    input2.id="imputCible"
+    let option4 = document.createElement('option')
+    option4.id="euro"
+    option4.value ="euro"
+    option4.innerText = "euro €"
+    input2.appendChild(option4)
+    let option5 = document.createElement('option')
+    option5.id="dolar"
+    option5.value ="dolar"
+    option5.innerText= "dolar $"
+    input2.appendChild(option5)
+    let option6 = document.createElement('option')
+    option6.id="yen"
+    option6.value ="yen"
+    option6.innerText= "yen"
+    input2.appendChild(option6)
 })
 
 //  Tableau des données de devises
