@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     let root = document.getElementById("root")
-    let select = document.createElement('select')
-    select.id="select1"
-    select.value="select"
     let input = document.createElement('input')
     input.id="imput_origin"
-    select.innerHTML="choisir sa monnaie"
-    input.appendChild(select)
+    input.appendChild(root)
+    let origin = document.createElement('select')
+    origin.id="origin"
+    origin.value="select"
+    origin.appendChild(input)
     let option1 = document.createElement('option')
     option1.id="euro"
     option1.value ="euro"
@@ -31,11 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
     input.placeholder = "Saisir valeur a convertir"
     let resultat= document.getElementById('resultat')
     resultat.id = "resultat"
-    select.value="select"
-    select.innerHTML="choisir sa monnaie"
-    input.appendChild(select)
     let input2 = document.createElement('deviseResultat')
     input2.id="imputCible"
+    let cible = document.createElement('select')
+    cible.id="select1"
+    cible.value="select"
+    cible.innerHTML="choisir sa monnaie"
+    input2.appendChild(cible)
     let option4 = document.createElement('option')
     option4.id="euro"
     option4.value ="euro"
