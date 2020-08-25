@@ -47,7 +47,8 @@ function konvert(dataCurency, deviseOrigin, deviseCible) {
 function showResult(result) {
     const champResult = document.querySelector("#deviseResultat")
     champResultat = document.createElement("p");
-    champResultat.innerText = result;
+    champResultat.innerText = `Résultat de la conversion : ${result}`;
+    champResult.appendChild(champResultat);
 
 }
 
