@@ -40,3 +40,15 @@ function konvert(dataCurency, deviseOrigin, deviseCible) {
 
 
 } return result;
+
+
+
+//  Affichage résultats
+function showResult(result) {
+    const champResult = document.querySelector("#deviseResultat")
+    champResultat = document.createElement("p");
+    champResultat.innerText = result;
+
+}
+
+
