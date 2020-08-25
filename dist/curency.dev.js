@@ -6,4 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   champSaisie.appendChild(input);
   input.id = "champSaisie";
   input.placeholder = "Saisir valeur a convertir";
+  var resultat = document.getElementById("resultat");
+  resultat.innerHTML = "Votre reultat est de ";
 });
