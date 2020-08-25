@@ -10,7 +10,6 @@ champSaisie.appendChild(input)
 input.id = "champSaisie"
 input.placeholder = "Saisir valeur a convertir"
 
-<<<<<<< HEAD
 
 
 
@@ -18,11 +17,9 @@ input.placeholder = "Saisir valeur a convertir"
 let resultat = document.getElementById("resultat")
 resultat.innerHTML = "Votre reultat est de " 
 
+})
 
 
-})
-=======
-})
 
 //  Tableau des données de devises
 let dataCurency = [];
@@ -37,4 +34,3 @@ function chargeDataFetch() {
 }
 
 
->>>>>>> 10bca5881538e3126e29e12a52b5372e793a91ce
