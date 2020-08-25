@@ -11,3 +11,17 @@ input.id = "champSaisie"
 input.placeholder = "Saisir valeur a convertir"
 
 })
+
+//  Tableau des données de devises
+let dataCurency = [];
+//  fonctin qui va chercher les données de l'API : Appeler "chargeDataFetch()" pour récupérer les données.
+function chargeDataFetch() {
+    fetch(www.floatrates.com/daily/eur.json).then(function(data) {
+        // return data.json();
+    }).then(function (data) {
+        console.log(data);
+        dataCurency = data;
+    })
+}
+
+
